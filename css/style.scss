@@ -13,6 +13,16 @@ body{
     font-family: $font;
 }
 
+//inheritance and extend
+.padding{
+    padding: 5px;
+}
+
+//mixin
+@mixin text_dec($dec: none){
+    text-decoration: $dec;
+}
+
 //formatting for the top of the page in the wrap
 //with nesting
 #top{
@@ -52,24 +62,24 @@ head{
 //nab formatting 
 nav li{
     display: inline-block;
-    padding: 5px;
-    text-decoration: none;
+    @extend .padding;
+    @include text_dec();
 }
 nav ul{
     text-align: center;
-    padding: 5px;
+    @extend .padding;
 }
 a{
-    text-decoration: none;
+    @include text_dec();
 }
 a:hover{
-    text-decoration: none;
-    text-decoration: underline;
+    @include text_dec();
+    @include text_dec(underline);
 }
 
 a:active{
-    color: red;
-    text-decoration: underline;
+    color: lighten(red, 50);
+    @include text_dec(underline);
 }
 
 //formatting for pictures

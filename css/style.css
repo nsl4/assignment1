@@ -3,6 +3,9 @@ body {
   background-repeat: no-repeat;
   font-family: verdana; }
 
+.padding, nav li, nav ul {
+  padding: 5px; }
+
 #top {
   text-align: center; }
   #top padding {
@@ -30,12 +33,10 @@ head {
 
 nav li {
   display: inline-block;
-  padding: 5px;
   text-decoration: none; }
 
 nav ul {
-  text-align: center;
-  padding: 5px; }
+  text-align: center; }
 
 a {
   text-decoration: none; }
@@ -45,7 +46,7 @@ a:hover {
   text-decoration: underline; }
 
 a:active {
-  color: red;
+  color: white;
   text-decoration: underline; }
 
 figure {
