@@ -1,0 +1,68 @@
+/*CSS review exercise eternal style sheet*/
+body {
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  font-family: verdana; }
+
+#top {
+  padding-top: 20px;
+  padding-bottom: 0;
+  padding-left: 1px;
+  padding-right: 1px;
+  text-align: center; }
+
+#tophead {
+  text-shadow: 2px 1px #00E865; }
+
+#wrap {
+  background-color: whitesmoke;
+  width: 75%;
+  margin: 50px auto;
+  padding: 10px;
+  border: 6px solid black; }
+
+head {
+  background-color: darkgreen;
+  padding: 10px;
+  color: white;
+  border-bottom: 5px solid lightgreen;
+  border-right: 10px solid white; }
+
+nav li {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none; }
+
+nav ul {
+  text-align: center;
+  padding: 5px; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none;
+  text-decoration: underline; }
+
+a:active {
+  color: red;
+  text-decoration: underline; }
+
+figure {
+  text-align: center;
+  padding-top: 0; }
+
+hr {
+  height: 5px;
+  background-color: black; }
+
+h3 {
+  padding-left: 50px; }
+
+p {
+  padding-left: 20px; }
+
+ul {
+  padding-left: 80px; }
+
+/*# sourceMappingURL=style.css.map */
