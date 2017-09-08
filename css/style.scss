@@ -1,11 +1,19 @@
+//variables
+$bgImage: url(../images/background.jpg);
+$font: verdana;
+$shadow: #00E865;
+$wrapBGcolor: whitesmoke;
+$headBGcolor: darkgreen;
 
 
+//body formatting
 body{
-    background-image: url(../images/background.jpg);
+    background-image: $bgImage;
     background-repeat: no-repeat;
-    font-family: verdana;
+    font-family: $font;
 }
 
+//formatting for the top of the page in the wrap
 #top{
     padding-top: 20px;
     padding-bottom: 0;
@@ -13,27 +21,30 @@ body{
     padding-right: 1px;
     text-align: center;
 }
-
+//formatting for the top of the page in the top
 #tophead{
-    text-shadow: 2px 1px #00E865;
+    text-shadow: 2px 1px $shadow;
 }
 
+//formatting for the wrap around the body
 #wrap{
-    background-color: whitesmoke;
+    background-color: $wrapBGcolor;
     width: 75%;
     margin: 50px auto;
     padding: 10px;
     border: 6px solid black;
 }
 
+//formatting for the head
 head{
-    background-color: darkgreen;
+    background-color: $headBGcolor;
     padding: 10px;
     color: white;
     border-bottom: 5px solid lightgreen;
     border-right: 10px solid white;
 }
 
+//nab formatting 
 nav li{
     display: inline-block;
     padding: 5px;
@@ -56,21 +67,29 @@ a:active{
     text-decoration: underline;
 }
 
+//formatting for pictures
 figure {
     text-align: center;
     padding-top: 0;
 }
+
+//formatting for lines
 hr {
     height: 5px;
     background-color: black;
 }
+
+//formatting for h3 heading
 h3{
     padding-left: 50px;
 }
 
+//formatting for paragraphs
 p{
     padding-left: 20px;
 }
+
+// formatting for lists
 ul{
     padding-left: 80px;
 }
