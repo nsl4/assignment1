@@ -15,7 +15,7 @@ body{
 
 //inheritance and extend
 .padding{
-    padding: 5px;
+    padding: 10/2px;        //added math
 }
 
 //mixin
@@ -27,7 +27,7 @@ body{
 //with nesting
 #top{
     padding{
-        top: 20px;
+        top: 2*10px;          //added math
         bottom: 0;
         left: 1px;
         right: 1px;
@@ -45,7 +45,7 @@ body{
 #wrap{
     background-color: lighten($wrapBGcolor, 30);
     width: 75%;
-    margin: 50px auto;
+    margin: 100-50px auto;          //added math
     padding: 10px;
     border: 6px solid black;
 }
@@ -55,7 +55,7 @@ head{
     background-color: $headBGcolor;
     padding: 10px;
     color: white;
-    border-bottom: 5px solid lightgreen;
+    border-bottom: 2px+3px solid lightgreen;  //added math
     border-right: 10px solid white;
 }
 
